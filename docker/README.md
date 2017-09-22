@@ -10,11 +10,12 @@
 ```sh
 docker-machine create --driver virtualbox --virtualbox-cpu-count 2 --virtualbox-memory 2048 bigdata
 ```
+
+need to pre-install virtualbox, otherwise it will shows
+```
+Error with pre-create check: "exit status 126"
+```
 2. run script to run all the related docker container (Kafka, Cassandra, Zookeeper)
 ```sh
 ./local-setup.sh bigdata
 ```
-
-## Windows
-
-TODO
